@@ -4,7 +4,7 @@
             <div class="toggle">
                 <div class="logo">
                     <img src="img/logo.png">
-                    <h2>A<span class="danger">Pacionados</span></h2>
+                    <h2>A<span class="danger">Pasionados</span></h2>
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">
@@ -69,7 +69,7 @@
                     </span>
                     <h3>New Login</h3>
                 </a>
-                <a href="#">
+                <a href="./index.php">
                     <span class="material-icons-sharp">
                         logout
                     </span>
@@ -95,7 +95,7 @@
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
                             <div class="percentage">
-                                <p>+81%</p>
+                                <p class="margin">+81%</p>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
 
             <!-- New Users Section -->
             <div class="new-users">
-                <h2>New Users</h2>
+                <h2>Campers</h2>
                 <div class="user-list">
                     <div class="user">
                         <img src="img/profile-2.jpg">
@@ -155,9 +155,18 @@
                         <p>6 Hours Ago</p>
                     </div>
                     <div class="user">
-                        <img src="img/plus.png">
-                        <h2>More</h2>
-                        <p>New User</p>
+                        <!-- Botón para abrir el modal -->
+                        <button type="button" class="btn user" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <div class="reminders2">
+                                <div class="notification add-reminder">
+                                    <div>
+                                        <span class="material-icons-sharp bajo">add</span>
+                                    </div>
+                                </div>
+                                <p>Add</p>
+                            </div>
+                        </button>
+                        <?php include 'forms/forms.php'; ?>
                     </div>
                 </div>
             </div>
@@ -179,6 +188,7 @@
                     <tbody></tbody>
                 </table>
                 <a href="#">Show All</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">New User</button>
             </div>
             <!-- End of Recent Orders -->
 
@@ -218,7 +228,7 @@
             <div class="user-profile">
                 <div class="logo">
                     <img src="img/logo.png">
-                    <h2>Apacionados</h2>
+                    <h2>Apasionados</h2>
                     <p>Fullstack Web Developer</p>
                 </div>
             </div>
@@ -277,10 +287,7 @@
                         <h3>Add Reminder</h3>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
+    
