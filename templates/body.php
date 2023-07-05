@@ -156,7 +156,7 @@
                     </div>
                     <div class="user">
                         <!-- Botón para abrir el modal -->
-                        <button type="button" class="btn user" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <button type="button" class="btn user" data-bs-toggle="modal" data-bs-target="#myModal1">
                             <div class="reminders2">
                                 <div class="notification add-reminder">
                                     <div>
@@ -188,7 +188,7 @@
                     <tbody></tbody>
                 </table>
                 <a href="#">Show All</a>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">New User</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">New User</button>
             </div>
             <!-- End of Recent Orders -->
 

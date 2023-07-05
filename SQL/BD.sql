@@ -1,13 +1,13 @@
--- Active: 1688401528193@@localhost@3306@alquilartemis
-DROP DATABASE WebPage;
+DROP DATABASE IF EXISTS WebPage;
 CREATE DATABASE WebPage;
 USE WebPage;
+
 CREATE TABLE users (
     idUser INT AUTO_INCREMENT NOT NULL,
-    userName VARCHAR(100) NOT NULL,
+    userName VARCHAR(100) NOT NULL UNIQUE,
     emailUser VARCHAR(100) NOT NULL,
     passwordUser VARCHAR(100) NOT NULL,
-    PRIMARY KEY (iduser),
+    PRIMARY KEY (idUser),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -19,5 +19,6 @@ CREATE TABLE persons (
     nameUser VARCHAR(100) NOT NULL,
     PRIMARY KEY (idPerson),
     FOREIGN KEY (userId) REFERENCES users (idUser),
+    FOREIGN KEY (nameUser) REFERENCES users (userName),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

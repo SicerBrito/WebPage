@@ -31,7 +31,7 @@
                     <input type="password" name="password" required>
                 </div>
                 <div class="input-group">
-                    <button type="submit" class="btn" name="login_user">Iniciar sesión</button>
+                    <button type="submit" class="btn" name="guardar">Iniciar sesión</button>
                 </div>
                 <p>¿No tienes una cuenta? <a href="./login/registro.php">Regístrate</a></p>
             </form>

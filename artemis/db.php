@@ -4,23 +4,23 @@
 
 //Definimos la constante
 if (!defined("DB_TYPE")){
-    difine("DB_TYPE","mysql");
+    define("DB_TYPE","mysql");
 }
 
 if (!defined("DB_HOST")){
-    difine("DB_HOST","localhost");
+    define("DB_HOST","localhost");
 }
 
 if (!defined("DB_NAME")){
-    difine("DB_NAME","database");
+    define("DB_NAME","WebPage"); // Aquí debes usar el nombre de tu base de datos
 }
 
 if (!defined("DB_USER")){
-    difine("DB_USER","campus");
+    define("DB_USER","campus");
 }
 
 if (!defined("DB_PWD")){
-    difine("DB_PWD","campus2023");
+    define("DB_PWD","campus2023");
 }
 
 

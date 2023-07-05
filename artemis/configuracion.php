@@ -56,7 +56,7 @@ class Config{
         //staimen o declaraciones
         //TODO: Como ya instanciamos PDO ya tenemos todos los recursos del objeto de datos de php y uno de ellos es "prepare" que es donde expesificamos la columna general insert into, se expesifica en el las columnas todas menos la autonumerica.
         try {
-            $stma = $this-> dbConexion -> prepare("INSERT INTO users(userName, emailUser, passwordUser) VALUES(?,?,?)");
+            $stm = $this-> dbConexion -> prepare("INSERT INTO users(userName, emailUser, passwordUser) VALUES(?,?,?)");
 
             $stm -> execute([$this->user, $this->email, $this->password]);
         } catch (Execption $e) {
