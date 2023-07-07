@@ -174,21 +174,22 @@
 
             <!-- Recent Orders Table -->
             <div class="recent-orders">
-                <h2>Recent Orders</h2>
+                <h2>Associates</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Course Name</th>
-                            <th>Course Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
+                            <th>Name</th>
+                            <th>Association</th>
+                            <th>Job</th>
+                            <th>Country</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 </table>
                 <a href="#">Show All</a>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">New User</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Add</button>
+                <button type="button" class="btn btn-primary" id="fireworks-btn2" name="fireworks-btn">¡Surprise!</button>
             </div>
             <!-- End of Recent Orders -->
 
@@ -203,7 +204,7 @@
                         menu
                     </span>
                 </button>
-                <div class="dark-mode">
+                <div class="dark-mode" id="fireworks-btn">
                     <span class="material-icons-sharp active">
                         light_mode
                     </span>
@@ -235,16 +236,16 @@
 
             <div class="reminders">
                 <div class="header">
-                    <h2>Reminders</h2>
-                    <span class="material-icons-sharp">
-                        notifications_none
+                    <h2>Associations</h2>
+                    <span class="material-symbols-outlined">
+                    handshake
                     </span>
                 </div>
 
                 <div class="notification">
                     <div class="icon">
-                        <span class="material-icons-sharp">
-                            volume_up
+                        <span class="material-symbols-outlined">
+                        loupe
                         </span>
                     </div>
                     <div class="content">
@@ -262,8 +263,8 @@
 
                 <div class="notification deactive">
                     <div class="icon">
-                        <span class="material-icons-sharp">
-                            edit
+                        <span class="material-symbols-outlined">
+                        loupe
                         </span>
                     </div>
                     <div class="content">
@@ -284,7 +285,7 @@
                         <span class="material-icons-sharp">
                             add
                         </span>
-                        <h3>Add Reminder</h3>
+                        <h3>Add Association</h3>
                     </div>
                 </div>
             </div>

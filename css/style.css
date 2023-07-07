@@ -314,7 +314,7 @@ main .analyse .progresss .percentage{
 }
 
 main .new-users{
-    margin-top: 1.3rem;
+    margin-top: 2.5rem;
 }
 
 .user-list{
@@ -337,10 +337,12 @@ main .new-users .user-list{
 }
 
 main .new-users .user-list:hover{
+    margin: 0px;
     box-shadow: none;
 }
 
 main .new-users .user-list .user{
+    margin: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,7 +357,7 @@ main .new-users .user-list .user img{
 }
 
 main .recent-orders{
-    margin-top: 1.3rem;
+    margin-top: 2.5rem;
 }
 
 main .recent-orders h2{
@@ -628,7 +630,6 @@ main .recent-orders a{
     color: var(--color-white);
     opacity: 0.75;
 }
-  
 
 @media screen and (max-width: 1200px) {
     .container{

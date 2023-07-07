@@ -12,8 +12,13 @@ const isDarkMode = localStorage.getItem('darkMode') === 'true';
 // Establecer el tema inicial
 if (isDarkMode) {
   body.classList.add('dark-mode-variables');
-  darkMode.querySelector('span:nth-child(1)').classList.add('active');
+  console.log(darkMode.querySelector('span:nth-child(1)'));
+  darkMode.querySelector('span:nth-child(1)').classList.remove('active');
   darkMode.querySelector('span:nth-child(2)').classList.add('active');
+  
+} else {
+  darkMode.querySelector('span:nth-child(1)').classList.add('active');
+  darkMode.querySelector('span:nth-child(2)').classList.remove('active');
 }
 
 menuBtn.addEventListener('click', () => {
@@ -33,17 +38,4 @@ darkMode.addEventListener('click', () => {
   // Guardar el estado del modo oscuro en el localStorage
   const isDarkMode = body.classList.contains('dark-mode-variables');
   localStorage.setItem('darkMode', isDarkMode.toString());
-});
-
-Orders.forEach(order => {
-  const tr = document.createElement('tr');
-  const trContent = `
-    <td>${order.productName}</td>
-    <td>${order.productNumber}</td>
-    <td>${order.paymentStatus}</td>
-    <td class="${order.status === 'Declined' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
-    <td class="primary">Details</td>
-  `;
-  tr.innerHTML = trContent;
-  document.querySelector('table tbody').appendChild(tr);
 });

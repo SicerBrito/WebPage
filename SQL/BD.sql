@@ -1,3 +1,4 @@
+-- Active: 1688753003200@@localhost@3306@CampusV2
 DROP DATABASE IF EXISTS WebPage;
 CREATE DATABASE WebPage;
 USE WebPage;

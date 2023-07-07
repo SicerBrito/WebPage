@@ -8,13 +8,12 @@ if (isset($_POST['guardar'])){
 
     require_once("configuracion.php");
 
+    //Aqui se debe de colocar los nombres que poseen cada uno de los inputs en formulario para asi poder recibir sus datos.
     $configuracion = new Config(null, $_POST['user'], $_POST['email'], password_hash($_POST['password'],PASSWORD_DEFAULT));
 
-    $configuracion->insertData();
+    $configuracion->insertDataUsers();
 
     echo "<script> alert('Los datos fueron guardados correctamente.'); document.location='./index.php'; </script>";
-
-
 
 }
 

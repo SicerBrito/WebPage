@@ -1,0 +1,38 @@
+  .table-responsive {
+    overflow-x: auto; /* Hace que la tabla sea desplazable horizontalmente si es necesario */
+    margin: 10%;
+  }
+  
+  /* Estilos personalizados para las celdas de encabezado */
+  .table-dark thead th {
+    font-weight: bold;
+    color: white;
+    background-color: #343a40;
+  }
+  
+  /* Estilos personalizados para las celdas de datos */
+  .table-dark tbody td {
+    color: white;
+  }
+  
+  /* Estilos personalizados para las filas pares */
+  .table-dark tbody tr:nth-child(even) {
+    background-color: #343a40;
+  }
+  
+  @media (max-width: 768px) { /* Estilos para tablet */
+    .table-responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+    }
+    .table-responsive table {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Estilos para celular */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  }
